@@ -1,9 +1,9 @@
 # LogParser
-A Spring Boot application that parses and inserts logs to a in memory database which is exchangeble with a MYSQL database
+A Spring Boot application that parses and inserts logs to a in memory database which is interchangeable with a MYSQL database
 SQL queries were written by using Spring Data 
-There are two entities which correspond to two databases names as IpTable and ForbiddenIpTable
-If logged requests exceed the threshold spesified Ips will be inserted to ForbiddenIpTable
-You can run unit tests which were written to ensure the following criterias below;
+There are two entities which correspond to two tables named as IpTable and ForbiddenIpTable
+If logged requests exceed the threshold specified IPs will be inserted to ForbiddenIpTable
+You may run unit tests which were written to ensure the following criterias below;
 
 
 (1) java -cp "parser.jar" com.ef.Parser --startDate=2017-01-01.15:00:00 --duration=hourly --threshold=200
